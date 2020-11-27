@@ -1,6 +1,6 @@
 ---
-title: "Why I Love Ice Cream"
-date: "2017-08-10"
+title: "Why I Love Photography"
+date: "2020-11-26"
 ---
 
 ### Ice cream is the best.

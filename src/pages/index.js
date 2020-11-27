@@ -8,6 +8,10 @@ import SEO from "../components/seo"
 
 const BlogLink = styled(Link)`
   text-decoration:none;
+  color: #000;
+  &:hover{
+    color:#666
+  }
 `
 const BlogTitle = styled.h2`
   margin-bottom:1rem;
@@ -17,8 +21,10 @@ export default ({data}) => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <h1>Rad's Mind</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h1>Hi people</h1>
+      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <Image />
+      </div>
       {
         data.allMarkdownRemark.edges.map(({node})=>(
           <div key={node.id}>
@@ -30,10 +36,7 @@ export default ({data}) => (
         ))
       }
     </div>
-    <h1>Hi people</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    
   </Layout>
 )
 
@@ -50,6 +53,9 @@ export const query = graphql`
             description
             title
             date
+          }
+          fields {
+            slug
           }
           excerpt
         }
