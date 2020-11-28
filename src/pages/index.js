@@ -8,9 +8,9 @@ import SEO from "../components/seo"
 
 const BlogLink = styled(Link)`
   text-decoration:none;
-  color: #000;
+  color: #fbf665;
   &:hover{
-    color:#666
+    color:yellow
   }
 `
 const BlogTitle = styled.h2`
